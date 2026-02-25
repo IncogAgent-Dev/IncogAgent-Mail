@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "IncogAgent Mail - AI-Powered Privacy Guardian for Gmail",
+  "author": "Copyright (c) 2026 IncogAgent Team",
+  "version": "1.0.0",
+  "key": "d3JpdGluZyBSU0Ega2V5DQowggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDglU7Wtn/8EUmwRJ97bDQev/fk5R6En5D2bZOaHwhZ/gW3dW7h+abf8mBEoCXMumCxuZaX5wcN5AMF6pnRyclCTvFYHCwVctj0VszvVp8nApa2RwI9cYqI9+W8Qm44EAdC9Uw4SV57RmAtuugkXYmXM0SIdsvBG8x6OMvMigzplRPoohvrK+5wpjk0TSws6yy9XHxEeCFWEoDgImxJRLOLxZ8Lar+8G0pB0mst1NkoIfE6TduzOaenyxE7XkeWyic2BKi5ibaGnsUMVgB0aQTAzWJGgT6jNYkg4Y9YNXFrQ2zWnEMYOleZUrtBTSvuQQFvowLnD1MQttP6M7FW/PTLAgMBAAE=",
+  "description": "IncogAgent Mail is a Chrome extension that provides AI-powered email summarization with privacy protection for Gmail users. This is the open source version on Github.",
+  "permissions": ["identity", "storage"],
+  "host_permissions": ["https://gmail.googleapis.com/*", "<all_urls>"],
+  "oauth2": {
+    "client_id": "000000000000-placeholder.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.readonly",
+      "https://www.googleapis.com/auth/gmail.modify"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "IncogAgent Mail - AI-Powered Privacy Guardian for Gmail",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
