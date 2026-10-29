@@ -42,6 +42,17 @@ IncogAgent Mail is designed to eliminate the "Privacy Paradox" of the GenAI era.
 - `https://gmail.googleapis.com/*`: Required to fetch email thread data.
 - `<all_urls>`: Required for the content script to extract text directly from the active Gmail DOM.
 
+## Team
+
+IncogAgent Mail was developed collaboratively by:
+
+- [Jietong Zhou](https://github.com/AAAGUAI31)
+- [Yifan Xu](https://github.com/yxu-dev)
+- [Yihang Zou](https://github.com/Bbbxdjc)
+- [Yuchu Guo](https://github.com/williamguo34)
+
+This repository contains the consolidated open-source edition of the team's work.
+
 ## License & Notices
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.  
 For third-party libraries, see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
