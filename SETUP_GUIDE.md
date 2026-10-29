@@ -66,7 +66,10 @@ cd IncogAgent-Mail
 ```json
 "oauth2": {
   "client_id": "YOUR_ACTUAL_CLIENT_ID_HERE.apps.googleusercontent.com",
-  "scopes": ["[https://www.googleapis.com/auth/gmail.modify](https://www.googleapis.com/auth/gmail.modify)"]
+  "scopes": [
+      "https://www.googleapis.com/auth/gmail.readonly",
+      "https://www.googleapis.com/auth/gmail.modify"
+   ]
 }
 
 ```
